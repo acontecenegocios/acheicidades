@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade de Itu - SP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à Cidade de Itu - SP</h1>
+    </header>
+
+    <main>
+        <h2>Conheça Itu</h2>
+        <p>Itu é um município brasileiro localizado no interior do estado de São Paulo, conhecido como a "Cidade dos Exageros". Fundada em 1610, Itu é famosa por suas construções históricas, atrações turísticas e por seu papel importante no desenvolvimento econômico da região.</p>
+
+        <h2>Principais Atrações Turísticas</h2>
+        <ul>
+            <li><strong>Praça dos Exageros</strong> - Um espaço temático com objetos gigantes que remetem ao famoso bordão de Itu.</li>
+            <li><strong>Igreja Matriz de Nossa Senhora da Candelária</strong> - Uma das construções religiosas mais antigas e importantes do município.</li>
+            <li><strong>Parque do Varvito</strong> - Um parque geológico que apresenta formações rochosas únicas no mundo.</li>
+            <li><strong>Fazenda do Chocolate</strong> - Um passeio para toda a família, com direito a conhecer a produção de chocolate artesanal e conviver com animais.</li>
+            <li><strong>Museu Republicano de Itu</strong> - Importante museu que conta a história da República Brasileira e da cidade.</li>
+        </ul>
+
+        <h2>Curiosidades</h2>
+        <p>Itu ficou nacionalmente conhecida por causa do humorista Simplício, que popularizou a cidade com piadas sobre o exagero do tamanho das coisas, como telefones, semáforos e outros objetos que podem ser encontrados na Praça dos Exageros.</p>
+
+        <h2>Informações Gerais</h2>
+        <ul>
+            <li><strong>Estado:</strong> São Paulo</li>
+            <li><strong>Fundação:</strong> 2 de fevereiro de 1610</li>
+            <li><strong>População:</strong> Aproximadamente 175 mil habitantes</li>
+            <li><strong>Gentílico:</strong> ituano</li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Informações sobre Itu - SP</p>
+    </footer>
+
+</body>
+</html>
