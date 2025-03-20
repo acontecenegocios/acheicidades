@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achei Cidades - Encontre Informações Sobre sua Cidade</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -33,30 +34,28 @@
         h1, h2 {
             margin: 0 0 10px;
         }
-        ul#state-list {
+        ul#city-list {
             list-style: none;
             padding: 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
         }
-        ul#state-list li {
+        ul#city-list li {
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             text-align: center;
-            padding: 15px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 10px;
+            transition: transform 0.2s;
         }
-        ul#state-list li:hover {
+        ul#city-list li:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        ul#state-list a {
+        ul#city-list a {
             text-decoration: none;
             color: #0077cc;
             font-weight: bold;
-            font-size: 1.1em;
         }
         footer {
             text-align: center;
@@ -75,35 +74,19 @@
         <p>Encontre informações sobre todas as cidades do Brasil</p>
     </header>
     <main>
-        <h2>Selecione um Estado</h2>
-        <ul id="state-list">
-            <li><a href="estados/acre.html">Acre (AC)</a></li>
-            <li><a href="estados/alagoas.html">Alagoas (AL)</a></li>
-            <li><a href="estados/amapa.html">Amapá (AP)</a></li>
-            <li><a href="estados/amazonas.html">Amazonas (AM)</a></li>
-            <li><a href="estados/bahia.html">Bahia (BA)</a></li>
-            <li><a href="estados/ceara.html">Ceará (CE)</a></li>
-            <li><a href="estados/distrito-federal.html">Distrito Federal (DF)</a></li>
-            <li><a href="estados/espirito-santo.html">Espírito Santo (ES)</a></li>
-            <li><a href="estados/goias.html">Goiás (GO)</a></li>
-            <li><a href="estados/maranhao.html">Maranhão (MA)</a></li>
-            <li><a href="estados/mato-grosso.html">Mato Grosso (MT)</a></li>
-            <li><a href="estados/mato-grosso-do-sul.html">Mato Grosso do Sul (MS)</a></li>
-            <li><a href="estados/minas-gerais.html">Minas Gerais (MG)</a></li>
-            <li><a href="estados/para.html">Pará (PA)</a></li>
-            <li><a href="estados/paraiba.html">Paraíba (PB)</a></li>
-            <li><a href="estados/parana.html">Paraná (PR)</a></li>
-            <li><a href="estados/pernambuco.html">Pernambuco (PE)</a></li>
-            <li><a href="estados/piaui.html">Piauí (PI)</a></li>
-            <li><a href="estados/rio-de-janeiro.html">Rio de Janeiro (RJ)</a></li>
-            <li><a href="estados/rio-grande-do-norte.html">Rio Grande do Norte (RN)</a></li>
-            <li><a href="estados/rio-grande-do-sul.html">Rio Grande do Sul (RS)</a></li>
-            <li><a href="estados/rondonia.html">Rondônia (RO)</a></li>
-            <li><a href="estados/roraima.html">Roraima (RR)</a></li>
-            <li><a href="estados/santa-catarina.html">Santa Catarina (SC)</a></li>
-            <li><a href="estados/sao-paulo.html">São Paulo (SP)</a></li>
-            <li><a href="estados/sergipe.html">Sergipe (SE)</a></li>
-            <li><a href="estados/tocantins.html">Tocantins (TO)</a></li>
+        <h2>Selecione um estado</h2>
+        <ul id="city-list">
+            <li><a href="estados/sao-paulo.html">São Paulo</a></li>
+            <li><a href="estados/rio-de-janeiro.html">Rio de Janeiro</a></li>
+            <li><a href="estados/distrito-federal.html">Distrito Federal</a></li>
+            <li><a href="estados/bahia.html">Bahia</a></li>
+            <li><a href="estados/ceara.html">Ceará</a></li>
+            <li><a href="estados/minas-gerais.html">Minas Gerais</a></li>
+            <li><a href="estados/parana.html">Paraná</a></li>
+            <li><a href="estados/amazonas.html">Amazonas</a></li>
+            <li><a href="estados/pernambuco.html">Pernambuco</a></li>
+            <li><a href="estados/goias.html">Goiás</a></li>
+            <!-- Adicionar links para todos os outros estados -->
         </ul>
     </main>
     <footer>
