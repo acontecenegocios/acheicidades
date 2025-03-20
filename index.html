@@ -12,6 +12,60 @@
         gtag('js', new Date());
         gtag('config', 'G-6T7330DTT3');
     </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2 {
+            margin: 0 0 10px;
+        }
+        ul#city-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        ul#city-list li {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+        ul#city-list li:hover {
+            transform: scale(1.05);
+        }
+        ul#city-list a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,11 +74,22 @@
     </header>
     <main>
         <h2>Selecione uma cidade</h2>
-        <ul id="city-list"></ul>
+        <ul id="city-list">
+            <li><a href="cidades/sao-paulo.html">São Paulo</a></li>
+            <li><a href="cidades/rio-de-janeiro.html">Rio de Janeiro</a></li>
+            <li><a href="cidades/brasilia.html">Brasília</a></li>
+            <li><a href="cidades/salvador.html">Salvador</a></li>
+            <li><a href="cidades/fortaleza.html">Fortaleza</a></li>
+            <li><a href="cidades/belo-horizonte.html">Belo Horizonte</a></li>
+            <li><a href="cidades/curitiba.html">Curitiba</a></li>
+            <li><a href="cidades/manaus.html">Manaus</a></li>
+            <li><a href="cidades/recife.html">Recife</a></li>
+            <li><a href="cidades/goiania.html">Goiânia</a></li>
+            <!-- Adicionar links para todas as outras cidades -->
+        </ul>
     </main>
     <footer>
         <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
