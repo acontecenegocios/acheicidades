@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achei Cidades - Encontre Informações Sobre sua Cidade</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png">
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -13,6 +15,10 @@
         gtag('js', new Date());
         gtag('config', 'G-6T7330DTT3');
     </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         body {
             margin: 0;
@@ -26,66 +32,78 @@
             padding: 20px 10px;
             text-align: center;
         }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
         main {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
         }
-        h1, h2 {
-            margin: 0 0 10px;
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
         }
         ul#city-list {
             list-style: none;
             padding: 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
         }
         ul#city-list li {
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             text-align: center;
-            padding: 10px;
-            transition: transform 0.2s;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         ul#city-list li:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
         }
         ul#city-list a {
             text-decoration: none;
             color: #0077cc;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1.1em;
+        }
+        ul#city-list a i {
+            color: #0077cc;
         }
         footer {
             text-align: center;
             padding: 15px;
             background-color: #333;
             color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Achei Cidades</h1>
+        <h1><i class="fas fa-map-marker-alt"></i> Achei Cidades</h1>
         <p>Encontre informações sobre todas as cidades do Brasil</p>
     </header>
     <main>
         <h2>Selecione um estado</h2>
         <ul id="city-list">
-            <li><a href="estados/sao-paulo.html">São Paulo</a></li>
-            <li><a href="estados/rio-de-janeiro.html">Rio de Janeiro</a></li>
-            <li><a href="estados/distrito-federal.html">Distrito Federal</a></li>
-            <li><a href="estados/bahia.html">Bahia</a></li>
-            <li><a href="estados/ceara.html">Ceará</a></li>
-            <li><a href="estados/minas-gerais.html">Minas Gerais</a></li>
-            <li><a href="estados/parana.html">Paraná</a></li>
-            <li><a href="estados/amazonas.html">Amazonas</a></li>
-            <li><a href="estados/pernambuco.html">Pernambuco</a></li>
-            <li><a href="estados/goias.html">Goiás</a></li>
+            <li><a href="estados/sao-paulo.html"><i class="fas fa-map"></i> São Paulo</a></li>
+            <li><a href="estados/rio-de-janeiro.html"><i class="fas fa-map"></i> Rio de Janeiro</a></li>
+            <li><a href="estados/distrito-federal.html"><i class="fas fa-map"></i> Distrito Federal</a></li>
+            <li><a href="estados/bahia.html"><i class="fas fa-map"></i> Bahia</a></li>
+            <li><a href="estados/ceara.html"><i class="fas fa-map"></i> Ceará</a></li>
+            <li><a href="estados/minas-gerais.html"><i class="fas fa-map"></i> Minas Gerais</a></li>
+            <li><a href="estados/parana.html"><i class="fas fa-map"></i> Paraná</a></li>
+            <li><a href="estados/amazonas.html"><i class="fas fa-map"></i> Amazonas</a></li>
+            <li><a href="estados/pernambuco.html"><i class="fas fa-map"></i> Pernambuco</a></li>
+            <li><a href="estados/goias.html"><i class="fas fa-map"></i> Goiás</a></li>
             <!-- Adicionar links para todos os outros estados -->
         </ul>
     </main>
