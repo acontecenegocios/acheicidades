@@ -89,6 +89,49 @@
             color: #fff;
             margin-top: 40px;
         }
+         /* Container para os posts - utiliza grid responsivo */
+    #posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta automaticamente o número de colunas */
+        gap: 20px; /* Espaçamento entre os posts */
+        margin-top: 40px; /* Espaçamento superior para separar dos outros elementos */
+    }
+
+    /* Caixa de cada post - estilo de quadro */
+    .post-box {
+        background-color: white; /* Fundo branco para destacar o post */
+        border-radius: 8px; /* Borda arredondada para suavizar a aparência */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+        padding: 20px; /* Espaçamento interno */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeitos de transição para o hover */
+    }
+
+    /* Efeito de hover no post - eleva o post e aumenta a sombra */
+    .post-box:hover {
+        transform: translateY(-5px); /* Levanta o post para dar o efeito de clique */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o post */
+    }
+
+    /* Título do post - estilo de cabeçalho */
+    .post-box h3 {
+        font-size: 1.5em; /* Tamanho maior para destacar o título */
+        margin-bottom: 10px; /* Espaçamento abaixo do título */
+        color: #0077cc; /* Cor azul para o título */
+    }
+
+    /* Texto do post - estilo de parágrafo */
+    .post-box p {
+        font-size: 1em; /* Tamanho de fonte legível */
+        color: #666; /* Cor cinza para não distrair da informação principal */
+        margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+    }
+
+    /* Link de "Leia Mais" - estilo do link */
+    .read-more {
+        color: #0077cc; /* Cor azul para o link */
+        font-weight: bold; /* Negrito para dar destaque */
+        text-decoration: none; /* Remove o sublinhado padrão */
+    }
     </style>
 </head>
 <body>
