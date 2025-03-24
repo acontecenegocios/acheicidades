@@ -89,48 +89,63 @@
             color: #fff;
             margin-top: 40px;
         }
-         /* Container para os posts - utiliza grid responsivo */
+         /* Container para os posts */
     #posts {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta automaticamente o número de colunas */
-        gap: 20px; /* Espaçamento entre os posts */
-        margin-top: 40px; /* Espaçamento superior para separar dos outros elementos */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o número de colunas conforme a largura da tela */
+        gap: 30px; /* Espaçamento entre os posts */
+        margin-top: 40px; /* Espaço superior */
     }
 
-    /* Caixa de cada post - estilo de quadro */
+    /* Estilo do quadro de cada post */
     .post-box {
-        background-color: white; /* Fundo branco para destacar o post */
-        border-radius: 8px; /* Borda arredondada para suavizar a aparência */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+        background-color: #fff; /* Fundo branco para destacar os posts */
+        border: 2px solid #ddd; /* Borda cinza clara */
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
         padding: 20px; /* Espaçamento interno */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeitos de transição para o hover */
+        display: flex;
+        flex-direction: column; /* Flex para alinhar os elementos no interior */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
     }
 
-    /* Efeito de hover no post - eleva o post e aumenta a sombra */
+    /* Efeito de hover - levanta o post e aumenta a sombra */
     .post-box:hover {
-        transform: translateY(-5px); /* Levanta o post para dar o efeito de clique */
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o post */
+        transform: translateY(-8px); /* Levanta o post ao passar o mouse */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Aumenta a sombra para destacar */
     }
 
-    /* Título do post - estilo de cabeçalho */
+    /* Título do post */
     .post-box h3 {
-        font-size: 1.5em; /* Tamanho maior para destacar o título */
-        margin-bottom: 10px; /* Espaçamento abaixo do título */
-        color: #0077cc; /* Cor azul para o título */
+        font-size: 1.6em; /* Tamanho maior para o título */
+        margin-bottom: 15px; /* Espaçamento abaixo do título */
+        color: #333; /* Cor do título */
+        font-weight: bold; /* Negrito no título */
     }
 
-    /* Texto do post - estilo de parágrafo */
+    /* Texto do post */
     .post-box p {
-        font-size: 1em; /* Tamanho de fonte legível */
-        color: #666; /* Cor cinza para não distrair da informação principal */
-        margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+        font-size: 1.1em; /* Tamanho de fonte confortável para leitura */
+        color: #555; /* Cor do texto */
+        margin-bottom: 20px; /* Espaçamento entre o texto e o botão de "Leia Mais" */
+        line-height: 1.6; /* Melhor espaçamento entre as linhas do texto */
     }
 
-    /* Link de "Leia Mais" - estilo do link */
+    /* Link "Leia Mais" */
     .read-more {
-        color: #0077cc; /* Cor azul para o link */
-        font-weight: bold; /* Negrito para dar destaque */
-        text-decoration: none; /* Remove o sublinhado padrão */
+        color: #0077cc; /* Cor azul */
+        font-weight: bold; /* Negrito */
+        text-decoration: none; /* Sem sublinhado */
+        border-top: 2px solid #0077cc; /* Linha superior azul para destacar */
+        padding-top: 10px; /* Espaçamento entre o texto e a linha */
+        margin-top: auto; /* Empurra o link para o fundo do post */
+        display: inline-block; /* Exibe o link como bloco */
+    }
+
+    /* Efeito ao passar o mouse sobre o link "Leia Mais" */
+    .read-more:hover {
+        color: #005fa3; /* Escurece a cor do link ao passar o mouse */
+        border-color: #005fa3; /* Altera a cor da borda ao passar o mouse */
     }
     </style>
 </head>
