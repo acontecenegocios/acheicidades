@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achei Cidades - Encontre Informações Sobre sua Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6T7330DTT3');
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header img {
+            width: 80px; /* Tamanho do logo */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul#city-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        ul#city-list li {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        ul#city-list li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        ul#city-list a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1.1em;
+        }
+        ul#city-list a i {
+            color: #0077cc;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Achei Cidades"> <!-- Logo no cabeçalho -->
+        <h1><i class="fas fa-map-marker-alt"></i> Achei Cidades</h1>
+        <p>Encontre informações sobre todas as cidades do Brasil</p>
+    </header>
+    <main>
+        <h2>Selecione um estado</h2>
+        <ul id="city-list">
+            <!-- Lista de estados -->
+            <li><a href="estados/ac.html"><i class="fas fa-map"></i> Acre</a></li>
+            <li><a href="estados/al.html"><i class="fas fa-map"></i> Alagoas</a></li>
+            <!-- Adicionar outros estados aqui -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
