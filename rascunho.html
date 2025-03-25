@@ -89,65 +89,7 @@
             color: #fff;
             margin-top: 40px;
         }
-       {
-         /* Container para os posts */
-    #posts {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o número de colunas conforme a largura da tela */
-        gap: 30px; /* Espaçamento entre os posts */
-        margin-top: 40px; /* Espaço superior */
-    }
-
-    /* Estilo do quadro de cada post */
-    .post-box {
-        background-color: #fff; /* Fundo branco para destacar os posts */
-        border: 2px solid #ddd; /* Borda cinza clara */
-        border-radius: 10px; /* Bordas arredondadas */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
-        padding: 20px; /* Espaçamento interno */
-        display: flex;
-        flex-direction: column; /* Flex para alinhar os elementos no interior */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
-    }
-
-    /* Efeito de hover - levanta o post e aumenta a sombra */
-    .post-box:hover {
-        transform: translateY(-8px); /* Levanta o post ao passar o mouse */
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Aumenta a sombra para destacar */
-    }
-
-    /* Título do post */
-    .post-box h3 {
-        font-size: 1.6em; /* Tamanho maior para o título */
-        margin-bottom: 15px; /* Espaçamento abaixo do título */
-        color: #333; /* Cor do título */
-        font-weight: bold; /* Negrito no título */
-    }
-
-    /* Texto do post */
-    .post-box p {
-        font-size: 1.1em; /* Tamanho de fonte confortável para leitura */
-        color: #555; /* Cor do texto */
-        margin-bottom: 20px; /* Espaçamento entre o texto e o botão de "Leia Mais" */
-        line-height: 1.6; /* Melhor espaçamento entre as linhas do texto */
-    }
-
-    /* Link "Leia Mais" */
-    .read-more {
-        color: #0077cc; /* Cor azul */
-        font-weight: bold; /* Negrito */
-        text-decoration: none; /* Sem sublinhado */
-        border-top: 2px solid #0077cc; /* Linha superior azul para destacar */
-        padding-top: 10px; /* Espaçamento entre o texto e a linha */
-        margin-top: auto; /* Empurra o link para o fundo do post */
-        display: inline-block; /* Exibe o link como bloco */
-    }
-
-    /* Efeito ao passar o mouse sobre o link "Leia Mais" */
-    .read-more:hover {
-        color: #005fa3; /* Escurece a cor do link ao passar o mouse */
-        border-color: #005fa3; /* Altera a cor da borda ao passar o mouse */
-    }
+      
     </style>
 </head>
 <body>
@@ -188,36 +130,6 @@
             <li><a href="estados/sp.html"><i class="fas fa-map"></i> São Paulo</a></li>
             <li><a href="estados/to.html"><i class="fas fa-map"></i> Tocantins</a></li>
         </ul>
- <main>
-        <h2>Últimos Posts</h2>
-        <div class="post-container">
-            <div class="post">
-                <h3>Os melhores destinos turísticos do Brasil</h3>
-                <p>Descubra quais cidades do Brasil oferecem as melhores atrações para turistas.</p>
-                <a href="#">Leia mais...</a>
-            </div>
-            <div class="post">
-                <h3>Como escolher uma cidade para morar</h3>
-                <p>Fatores essenciais para escolher a melhor cidade para viver.</p>
-                <a href="#">Leia mais...</a>
-            </div>
-            <div class="post">
-                <h3>O custo de vida nas principais capitais</h3>
-                <p>Saiba quais capitais oferecem melhor custo-benefício para seus moradores.</p>
-                <a href="#">Leia mais...</a>
-            </div>
-            <div class="post">
-                <h3>Empregabilidade: Onde estão as melhores oportunidades?</h3>
-                <p>Descubra as cidades que mais contratam no Brasil.</p>
-                <a href="#">Leia mais...</a>
-            </div>
-            <div class="post">
-                <h3>Curiosidades sobre cidades brasileiras</h3>
-                <p>Fatos interessantes e desconhecidos sobre algumas cidades do Brasil.</p>
-                <a href="#">Leia mais...</a>
-            </div>
-        </div>
-    </main>
     <footer>
         <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
         <p>
