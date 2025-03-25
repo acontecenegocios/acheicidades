@@ -1,182 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-   <!-- Charset para codificação de caracteres -->
-   <meta charset="UTF-8">
+    <!-- Charset para codificação de caracteres -->
+    <meta charset="UTF-8">
 
-   <!-- Configuração para garantir a responsividade em dispositivos móveis -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuração para garantir a responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- Title Tag (Título da página) -->
-   <title>Nome da Cidade - Achei Cidades</title>
+    <!-- Title Tag (Título da página) -->
+    <title>Nome da Cidade - Achei Cidades</title>
 
-   <!-- Meta Description (Descrição que aparece nos resultados de busca) -->
-   <meta name="description" content="Descubra tudo sobre Nome da Cidade. Informações sobre pontos turísticos, história, cultura e muito mais.">
+    <!-- Meta Description (Descrição que aparece nos resultados de busca) -->
+    <meta name="description" content="Descubra tudo sobre Nome da Cidade. Informações sobre pontos turísticos, história, cultura e muito mais.">
 
-   <!-- Meta Tags de SEO e conformidade -->
-   <meta name="robots" content="index, follow"> <!-- Permite que o Google indexe e siga os links -->
-   <meta name="author" content="Achei Cidades"> <!-- Define o autor do site -->
+    <!-- Meta Tags de SEO e conformidade -->
+    <meta name="robots" content="index, follow"> <!-- Permite que o Google indexe e siga os links -->
+    <meta name="author" content="Achei Cidades"> <!-- Define o autor do site -->
+    
+    <!-- Link para o favicon (ícone do site) -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png"> <!-- Favicon -->
 
-   <!-- Link para o favicon (ícone do site) -->
-   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png"> <!-- Favicon -->
+    <!-- Links para CSS e outros recursos (como fontes ou bibliotecas) -->
+    <link rel="stylesheet" href="style.css"> <!-- Substitua com o caminho correto do seu arquivo CSS -->
 
-   <!-- Links para CSS e outros recursos (como fontes ou bibliotecas) -->
-   <link rel="stylesheet" href="style.css"> <!-- Substitua com o caminho do seu arquivo CSS -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6T7330DTT3');
+    </script>
 
-   <!-- Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
-   <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-       gtag('config', 'G-6T7330DTT3');
-   </script>
-   <!-- Código do Google Auto Ads (coloque aqui) -->
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-   <script>
-       (adsbygoogle = window.adsbygoogle || []).push({
-           google_ad_client: "ca-pub-XXXXXX",  <!-- Substitua pelo seu ID do AdSense -->
-           enable_page_level_ads: true          <!-- Ativa os anúncios automáticos -->
-       });
-   </script>
+    <!-- Código do Google Auto Ads (coloque aqui) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-XXXXXX",  <!-- Substitua pelo seu ID do AdSense -->
+            enable_page_level_ads: true          <!-- Ativa os anúncios automáticos -->
+        });
+    </script>
    
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-   <style>
-       body {
-           margin: 0;
-           font-family: Arial, sans-serif;
-           background-color: #f4f4f4;
-           color: #333;
-       }
-       header {
-           background-color: #0077cc;
-           color: white;
-           padding: 20px 10px;
-           text-align: center;
-       }
-       header img {
-           width: 60px; /* Tamanho do logo igual ao favicon */
-           height: auto;
-           margin-bottom: 10px;
-       }
-       header h1 {
-           font-size: 2.5em;
-           margin-bottom: 10px;
-       }
-       main {
-           padding: 20px;
-           max-width: 1200px;
-           margin: auto;
-       }
-       h2 {
-           text-align: center;
-           margin-bottom: 20px;
-       }
-       ul#city-list {
-           list-style: none;
-           padding: 0;
-           display: grid;
-           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-           gap: 15px;
-       }
-       ul#city-list li {
-           background-color: white;
-           border: 1px solid #ddd;
-           border-radius: 8px;
-           text-align: center;
-           padding: 15px;
-           transition: transform 0.2s, box-shadow 0.2s;
-       }
-       ul#city-list li:hover {
-           transform: scale(1.05);
-           box-shadow: 0 0 15px rgba(0,0,0,0.2);
-       }
-       ul#city-list a {
-           text-decoration: none;
-           color: #0077cc;
-           font-weight: bold;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           gap: 8px;
-           font-size: 1.1em;
-       }
-       ul#city-list a i {
-           color: #0077cc;
-       }
-       footer {
-           text-align: center;
-           padding: 15px;
-           background-color: #333;
-           color: #fff;
-           margin-top: 40px;
-       }
-       .cookie-bar {
-           position: fixed;
-           bottom: 0;
-           left: 0;
-           width: 100%;
-           background: #222;
-           color: #fff;
-           padding: 15px;
-           text-align: center;
-           font-size: 14px;
-           display: none;
-       }
-       .cookie-bar button {
-           background: #f1c40f;
-           color: #000;
-           border: none;
-           padding: 8px 12px;
-           margin-left: 10px;
-           cursor: pointer;
-           font-weight: bold;
-       }
-   </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header img {
+            width: 60px; /* Tamanho do logo igual ao favicon */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul#city-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        ul#city-list li {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        ul#city-list li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        ul#city-list a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1.1em;
+        }
+        ul#city-list a i {
+            color: #0077cc;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+        .cookie-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            display: none;
+        }
+        .cookie-bar button {
+            background: #f1c40f;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-voltar {
+            text-decoration: none;
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .btn-voltar:hover {
+            background-color: #005fa3;
+        }
+    </style>
 </head>
 <body>
-   <header>
-       <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Logo Achei Cidades"> <!-- Logo igual ao favicon -->
-       <h1><i class="fas fa-map-marker-alt"></i> Achei Cidades</h1>
-       <p>Encontre informações sobre todas as cidades do Brasil</p>
-   </header>
-   <main>
-       <h2>Selecione uma cidade</h2>
-       <ul id="city-list">
-           <!-- Lista de estados -->
-           <li><a href="estados/ac.html"><i class="fas fa-map"></i> Rio Branco</a></li> 
-       </ul>
-   </main>
-   <footer>
-       <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
-       <p>
-           <a href="quem-somos.html">Quem Somos</a> |
-           <a href="politica.html">Política de Privacidade</a> |
-           <a href="termos.html">Termos de Uso</a> |
-           <a href="contato.html">Contato</a>
-       </p>
-   </footer>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Logo Achei Cidades"> <!-- Logo igual ao favicon -->
+        <h1><i class="fas fa-map-marker-alt"></i> Achei Cidades</h1>
+        <p>Encontre informações sobre todas as cidades do Brasil</p>
+    </header>
 
-   <!-- Barra de Cookies -->
-   <div class="cookie-bar" id="cookieBar">
-       Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
-       <a href="politica-de-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
-       <button onclick="aceitarCookies()">Aceitar</button>
-   </div>
+    <main>
+        <h2>Selecione uma cidade</h2>
+        <ul id="city-list">
+            <!-- Lista de cidades -->
+            <li><a href="estados/ac.html"><i class="fas fa-map"></i> Rio Branco</a></li>
+            <!-- Outras cidades podem ser adicionadas aqui -->
+        </ul>
 
-   <script>
-       function aceitarCookies() {
-           localStorage.setItem("cookieConsent", "true");
-           document.getElementById("cookieBar").style.display = "none";
-       }
+        <!-- Botão Voltar para Todos os Estados -->
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="btn-voltar">
+                Voltar para Todos os Estados
+            </a>
+        </div>
+    </main>
 
-       window.onload = function() {
-           if (!localStorage.getItem("cookieConsent")) {
-               document.getElementById("cookieBar").style.display = "block";
-           }
-       };
-   </script>
+    <footer>
+        <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
+        <p>
+            <a href="quem-somos.html">Quem Somos</a> |
+            <a href="politica.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a> |
+            <a href="contato.html">Contato</a>
+        </p>
+    </footer>
+
+    <!-- Barra de Cookies -->
+    <div class="cookie-bar" id="cookieBar">
+        Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
+        <a href="politica-de-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
+        <button onclick="aceitarCookies()">Aceitar</button>
+    </div>
+
+    <script>
+        function aceitarCookies() {
+            localStorage.setItem("cookieConsent", "true");
+            document.getElementById("cookieBar").style.display = "none";
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem("cookieConsent")) {
+                document.getElementById("cookieBar").style.display = "block";
+            }
+        };
+    </script>
 </body>
 </html>
