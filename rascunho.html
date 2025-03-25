@@ -21,7 +21,7 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- Links para CSS e outros recursos (como fontes ou bibliotecas) -->
-    <link rel="stylesheet" href="style.css"> <!-- Substitua com o cam
+    <link rel="stylesheet" href="style.css"> <!-- Substitua com o cam -->
     
     <title>Achei Cidades - Encontre Informações Sobre sua Cidade</title>
     <link rel="stylesheet" href="styles.css">
@@ -109,7 +109,27 @@
             color: #fff;
             margin-top: 40px;
         }
-      
+        .cookie-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            display: none;
+        }
+        .cookie-bar button {
+            background: #f1c40f;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -150,6 +170,7 @@
             <li><a href="estados/sp.html"><i class="fas fa-map"></i> São Paulo</a></li>
             <li><a href="estados/to.html"><i class="fas fa-map"></i> Tocantins</a></li>
         </ul>
+    </main>
     <footer>
         <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
         <p>
@@ -159,5 +180,26 @@
             <a href="contato.html">Contato</a>
         </p>
     </footer>
+
+    <!-- Barra de Cookies -->
+    <div class="cookie-bar" id="cookieBar">
+        Este site utiliza cookies para melhorar sua experiência. Ao continuar, você concorda com nossa 
+        <a href="politica-de-privacidade.html" style="color: #f1c40f;">Política de Privacidade</a>.
+        <button onclick="aceitarCookies()">Aceitar</button>
+    </div>
+
+    <script>
+        function aceitarCookies() {
+            localStorage.setItem("cookieConsent", "true");
+            document.getElementById("cookieBar").style.display = "none";
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem("cookieConsent")) {
+                document.getElementById("cookieBar").style.display = "block";
+            }
+        };
+    </script>
+
 </body>
 </html>
