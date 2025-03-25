@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Charset para codificação de caracteres -->
+<meta charset="UTF-8">
+
+<!-- Configuração para garantir a responsividade em dispositivos móveis -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title Tag (Título da página) -->
+<title>Nome da Cidade - Achei Cidades</title>
+
+<!-- Meta Description (Descrição que aparece nos resultados de busca) -->
+<meta name="description" content="Descubra tudo sobre Nome da Cidade. Informações sobre pontos turísticos, história, cultura e muito mais.">
+
+<!-- Meta Tags de SEO e conformidade -->
+<meta name="robots" content="index, follow"> <!-- Permite que o Google indexe e siga os links -->
+<meta name="author" content="Achei Cidades"> <!-- Define o autor do site -->
+    
+    <!-- Link para o favicon (ícone do site) -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Links para CSS e outros recursos (como fontes ou bibliotecas) -->
+    <link rel="stylesheet" href="style.css"> <!-- Substitua com o cam -->
+    
     <title>Achei Cidades - Encontre Informações Sobre sua Cidade</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png"> <!-- Favicon -->
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7330DTT3"></script>
@@ -32,6 +52,11 @@
             padding: 20px 10px;
             text-align: center;
         }
+        header img {
+            width: 60px; /* Tamanho do logo igual ao favicon */
+            height: auto;
+            margin-bottom: 10px;
+        }
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -49,8 +74,9 @@
             list-style: none;
             padding: 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste para um grid mais flexível */
             gap: 15px;
+            justify-items: stretch; /* Garante que os itens ocupem todo o espaço disponível */
         }
         ul#city-list li {
             background-color: white;
@@ -59,6 +85,7 @@
             text-align: center;
             padding: 15px;
             transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%; /* Garante que o item ocupe todo o espaço da coluna */
         }
         ul#city-list li:hover {
             transform: scale(1.05);
@@ -88,12 +115,14 @@
 </head>
 <body>
     <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Logo Achei Cidades"> <!-- Logo igual ao favicon -->
         <h1><i class="fas fa-map-marker-alt"></i> Achei Cidades</h1>
         <p>Encontre informações sobre todas as cidades do Brasil</p>
     </header>
     <main>
         <h2>Selecione um estado</h2>
         <ul id="city-list">
+            <!-- Lista de estados -->
             <li><a href="estados/ac.html"><i class="fas fa-map"></i> Acre</a></li>
             <li><a href="estados/al.html"><i class="fas fa-map"></i> Alagoas</a></li>
             <li><a href="estados/am.html"><i class="fas fa-map"></i> Amazonas</a></li>
@@ -125,6 +154,12 @@
     </main>
     <footer>
         <p>&copy; 2025 Achei Cidades. Todos os direitos reservados.</p>
+        <p>
+            <a href="quem-somos.html">Quem Somos</a> |
+            <a href="politica.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a> |
+            <a href="contato.html">Contato</a>
+        </p>
     </footer>
 </body>
 </html>
